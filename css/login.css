@@ -1,0 +1,383 @@
+  /*配置css默认样式*/
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend,input{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset{border:0; }
+img{display:block;}
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6,strong{font-weight:100;}
+body{ font-family:"微软雅黑";}
+input,a{outline:none;}
+html,body{
+    height: 100%;
+}
+.page{
+    width: 100%;
+    height: 100%;
+}
+span{
+    cursor: pointer;
+}
+  /*登陆页css*/
+
+  /*头部*/
+.header{
+    width: 992px;
+    height: 122px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.ske{
+    position: absolute;
+    right: 0px;
+    bottom: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.ske>a{
+    text-decoration: none;
+    color: #888888;
+}
+.ske>a:hover{
+    text-decoration:underline;
+    color: #E76470;
+    
+}
+/*图片定位*/
+.icon_opinion{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('../img/login/login1.png') no-repeat;
+    background-position: 0 -253px;
+}
+.icon_opinion1{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url('../img/login/login1.png') no-repeat;
+    background-position: -28px 0px;
+}
+.pull_down{
+    width: 14px;
+    height: 14px;
+    background: url('../img/login/login1.png') no-repeat;
+    background-position: 0px 0px;
+}
+  /*section部分*/
+
+.section{
+    width: 100%;
+    height: 512px;
+    background: #fff1e8;
+}
+.section_1{
+    width: 992px;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #ff9123;
+}
+
+.tips5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.tips5>span a{
+    text-decoration: none;
+    color: #2875cc;
+}
+.tips5>span a:hover{
+    text-decoration:underline;
+}
+  /*插入背景*/
+.section_1{
+    background-image: url('../img/login/login_bg.jpg');
+    background-position: center;
+    margin: 0 auto;
+}
+.userName{
+    width: 352px;
+    height: 372px;
+    background: #ffffff;
+    float: right;
+    margin-top: 34px;
+    position: relative;
+}
+.loginName{
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5e5e5e;
+    cursor: pointer;
+    border-bottom: 1px solid #f4f4f4;
+}
+.loginName>span{
+    font-size: 18px;
+    width: 200px;
+    height: 56px;
+    text-align: center;
+    line-height: 56px;
+}
+.shu{
+    width: 2px;
+    height: 25px;
+    background: #f4f4f4;
+}
+.relative{
+    color: #e3101e;
+}
+.formTable{
+    margin-top: 30px ;
+}
+.tableUser,.tablePass{
+    margin-left: 30px;
+}
+.tableCheckbox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 100px;
+    position: relative;
+}
+.automatic_login{
+    position: absolute;
+    right: 40px;
+}
+.forget_password{
+    margin-right: 5px;
+    color: #5e5e5e;
+}
+.forget_password>a{
+    text-decoration: none;
+    color: #5e5e5e;
+}
+.forget_password>a:hover{
+    color: #e3101e;
+}
+.ku{
+    position: absolute;
+    bottom: 5px;
+}
+.free_registration{
+    color: #2875cc;
+}
+.free_registration>a:hover{
+    color: #2875cc;
+
+}
+.btn_login{
+    width: 290px;
+    height: 44px;
+    margin-left: 45px;
+    margin-top: -10px !important;
+    background: #ff5757 !important;
+    color: #ffffff !important;
+    font-size: 18px !important;
+}
+.btn_login:hover{
+    background: #F64949 !important;
+}
+.phone_login{
+    color: #2875cc;
+    margin: 30px 30px 15px 30px;
+    font-size: 14px;
+}
+.phone_login span>a:hover{
+    color: #2875cc;
+}
+.login_type{
+    height: 50px;
+    line-height: 50px;
+    border-top: 1px solid #f4f4f4;
+    margin-bottom: 10px;
+}
+.login_type ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_type ul li:last-child{
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+ /*二维码部分*/
+
+ .QR_code{
+    position: absolute;
+    right: 0px;
+    top: 58px;
+    display: none;
+}
+.erweima{
+    width: 350px;
+    height: 266px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.login_code span{
+    display: inline-block;
+width: 50px;
+height: 30px;
+
+}
+.login_code1{
+    display: flex;
+    flex-direction: column;
+    color: #5e5e5e;
+}
+.ome{
+    color: #ff5757;
+    margin-left: 10px;
+}
+.free{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 16px;
+}
+.free>a:hover{
+    color: #ff5757;
+}
+
+  /*footer部分*/
+.footer{
+    width: 992px;
+    margin: 0 auto;
+}
+.theme ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 13px;
+    margin-top: 40px;
+    color: #666666;
+    line-height: 0;
+    margin-right: 20px;
+}
+.theme ul li:hover{
+    color: #e3101e;
+    cursor: pointer;
+}
+.tips{
+    text-align: center;
+    padding: 10px 0;
+    height: 20px;
+    line-height: 20px;
+}
+.tips{
+    height: 10px;
+    text-align: start;
+    line-height: 10px;
+    color: #999999;
+}
+.tips span{
+    margin: 0 5px;
+    font-size: 13px;
+}
+.certification:hover{
+    color: #e3101e;
+}
+.government{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('../img/login/ui.png') no-repeat;
+    background-position: 0px -1710px;
+}
+.icon2{
+    display: flex;
+    align-items: center;
+}
+.report{
+    border-top: 1px solid #e6e6e6;
+    margin-top: 20px;
+}
+.report ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 14px;
+    color: #999999;
+}
+.report ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.government1{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('../img/login/ui.png') no-repeat;
+    background-position: -3px -182px ;
+}
+.government2{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('../img/login/ui.png') no-repeat;
+    background-position: -38px -182px ;
+}.government3{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('../img/login/ui.png') no-repeat;
+    background-position: -72px -182px ;
+}.government4{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('../img/login/ui.png') no-repeat;
+    background-position: -108px -182px ;
+}.government5{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('../img/login/ui.png') no-repeat;
+    background-position: -140px -182px ;
+}.government6{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('../img/login/ui.png') no-repeat;
+    background-position: -175px -182px ;
+}.government7{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('../img/login/ui.png') no-repeat;
+    background-position: -238px -182px ;
+}
+.tips1{
+    width: 60px;
+    height: 36px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.tips2{
+    width: 110px;
+    height: 36px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+ 

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <link rel="shortcut icon" href="//app.gomein.net.cn/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/register.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.11.1/jquery.js"></script>
+    <title>注册页</title>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <div class="header_transcript">
+                <div id="register_logo"></div>
+                <span class="header_right">我已经注册,现在就<a href="../html/login.html">登录</a></span>
+            </div>
+        </div>
+        <div class="section">
+          <div class="section_transcript">
+            <div class="section_main">
+              <div class="section_main_top">
+                <div class="section_main_top_text">
+                  <ul>
+                    <li>
+                      <span class="step step_number1">1</span>
+                      <span>验证手机号</span>
+                    </li>
+                    <li class="wire wire_red1"></li>
+                    <li class="second">
+                      <span class="step step_number2">2</span>
+                      <span>填写账户信息</span>
+                    </li>
+                    <li class="wire wire_red2"></li>
+                    <li  class="thirdly"> 
+                      <span class="step step_number3">3</span>
+                      <span>注册成功</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- 第一步 -->
+              <div class="section_main_bottom">
+                <div class="layui-form-item input_button">
+                  <div class="layui-inline fist_step">
+                    <div class="layui-input-inline">
+                      <input type="tel" name="phone" lay-verify="required|phone" autocomplete="off" class="layui-input use_phone_login" placeholder="请输入常用手机号" >
+                      <div class="login_user_tips">
+                        <span class="tips_phone_import">请输入手机号</span>
+                        <span class="tips_phone_login">验证完成后，你可以使用该手机登陆或找回密码</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 第二步 -->
+                  <div class="layui-inline second_step">
+                    <div class="layui-input-inline">
+                      <input type="tel" name="phone" lay-verify="required|phone" autocomplete="off" class="layui-input userName_login" placeholder="请输入用户名" >
+                      <div class="login_user_tips">
+                        <span class="tips_phone_import1">请输入用户名</span>
+                        <span class="tips_phone_login1">4-20个字符,建议用汉字、字母，数字"-"、"_"组成</span>
+                      </div>
+                    </div>
+                    <div class="layui-input-inline">
+                      <input type="tel" name="phone" lay-verify="required|phone" autocomplete="off" class="layui-input password_login" placeholder="请设置登陆密码" >
+                      <div class="login_user_tips">
+                        <span class="tips_phone_import2">请设置登陆密码</span>
+                        <span class="tips_phone_login2">6-20个字符，建议使用字母、数字和符号两种以上的组合</span>
+                      </div>
+                    </div>
+                    <div class="layui-input-inline">
+                      <input type="tel" name="phone" lay-verify="required|phone" autocomplete="off" class="layui-input" placeholder="填写推荐人推荐码，帮好友赚收入(选填)" >
+                    </div>
+                  </div>
+                  <!-- 第三步 -->
+                  <div class="third_step_succeed">
+                    <h2>注册成功!  返回<a class="success_login" href="../html/login.html">登陆</a></h2>
+                  </div>
+
+                  <div class="layui-inline click_verification">
+                    <div class="layui-input-inline">
+                      <button type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input verification">点击按钮进行验证</button>
+                    </div>
+                  </div>
+                  <div class="layui-inline down_step Generate2">
+                    <div class="layui-input-inline">
+                      <button type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input next_step">下一步</button>
+                    </div>
+                  </div>
+                  <div class="layui-inline down_step Generate1">
+                    <div class="layui-input-inline">
+                      <button type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input next_step">下一步</button>
+                    </div>
+                  </div>
+                
+                  <div class="enterprise_user">
+                    <span class="corporate_user"></span>
+                    <a href="">企业用户注册</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+            <div class="theme">
+                <ul>
+                  <li>国美控股集团</li>
+                  <li>国美管家</li>
+                  <li>关于国美</li>
+                  <li>加入我们</li><span class="forget_password">|</span>
+                  <li>品牌大全</li>
+                  <li>商品专题</li>
+                  <li>商品词</li>
+                  <li>热词搜索</li>
+                  <li>友情链接</li>
+                  <li>风险监测</li><span class="forget_password">|</span>
+                  <li>销售联盟</li>
+                  <li>商家入驻</li>
+                  <li>国美分销</li>
+                </ul>
+                <div class="tips">
+                  <span>本公司游戏产品适合18岁以上成年人使用 违法和不良信息举报电话：021-39900132 <span
+                      class="certification">互联网药品信息服务资格证编号（沪）-经营性-2019-0006</span></span>
+                </div>
+                <div class="tips">
+                  <span>网络食品销售第三方平台提供者备案：沪网食备A0015号
+                    <span class="certification">网络文化经营许可证沪网文[2017]5537-436号</span>
+                    <span class="certification">增值电信业务经营许可证</span></span>
+                </div>
+                <div class="tips">
+                  <span>客服电话:4008113333
+                    <span class="certification">沪ICP备11009419号/京ICP备</span>
+                    <span class="certification">19011786号</span>
+                    <span class="certification"> 京B2-20191290</span>
+                    <span class="certification"> 经营执照</span>
+                    <span class="certification"> 营业执照 </span>
+                    <span class="certification"> 出版物经营许可证 </span>
+                  </span>
+                </div>
+                <div class="tips">
+                  <span class="icon2">©2000-2020 国美在线电子商务有限公司版权所有<span class="government"></span>
+                    <span class="certification">京公网安备11010502038379号</span>
+                  </span>
+                </div>
+              </div>
+              <div class="report ">
+                <ul>
+                  <li><span class="government1"></span><span class="tips1">经营性网站备案信息</span></li>
+                  <li><span class="government2"></span><span class="tips1">可信网站信用评价</span></li>
+                  <li><span class="government3"></span><span class="tips1">诚信网站</span></li>
+                  <li><span class="government4"></span><span class="tips1">朝阳网站警察</span></li>
+                  <li><span class="government5"></span><span class="tips1">网购大家评</span></li>
+                  <li><span class="government6"></span><span class="tips2">上海市互联网违法和不良信息举报中心</span></li>
+                  <li><span class="government7"></span><span class="tips1">网上有害信息举报中心</span></li>
+                </ul>
+              </div>
+        </div>
+    </div>
+</body>
+<script src="../layui/layui.js"></script>
+<script src="../js/register.js"></script>
+<script>
+  layui.use(['form', 'layedit', 'laydate'], function(){
+  var form = layui.form
+  ,layer = layui.layer
+  ,layedit = layui.layedit
+  ,laydate = layui.laydate;
+  });
+</script>
+</html>

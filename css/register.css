@@ -1,0 +1,328 @@
+  /*配置css默认样式*/
+  body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend,input{margin:0; padding:0;}
+  ul,li,ol{list-style:none;}
+  img,fieldset{border:0; }
+  img{display:block;}
+  a{text-decoration:none; color:#333;}
+  h1,h2,h3,h4,h5,h6,strong{font-weight:100;}
+  body{ font-family:"微软雅黑";}
+  input,a{outline:none;}
+  
+  html,body{
+      height: 100%;
+  }
+  .page{
+      width: 100%;
+  }
+  img{
+    cursor: pointer;
+}
+.header{
+    width: 100%;
+    height: 122px;
+    border-bottom: 1px solid #952b87;
+}
+.header_transcript{
+    width: 1200px;
+    height: 122px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#register_logo{
+    background: url(../img/注册/registerlogo.png) no-repeat;
+    width: 300px;
+    height: 62px;
+    margin-top: 16px;
+}
+.header_right{
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 550px;
+}
+.header_right a{
+    color: #66BBED;
+    margin-left: 5px;
+}
+.header_right a:hover{
+    text-decoration: underline;
+}
+/*section部分*/
+.section{
+    width: 100%;
+    height: 512px;
+}
+.section_transcript{
+    width: 1200px;
+    height: 512px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section_main{
+    width: 300px;
+    height: 362px;
+    position: relative;
+}
+
+/*上*/
+.section_main_top_text span{
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 10px !important;
+}
+.section_main_top_text ul{
+    position: absolute;
+    left: -52px;
+    width: 430px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wire{
+    width: 134px;
+    height: 3px;
+    background: #dedede;
+}
+.section_main_top_text ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #dedede;
+    width: 130px !important;
+}
+.section_main_top_text ul li:first-child{
+    color: #ff4c4c;
+}
+.step_number1{
+    border: 3px solid #ff4c4c !important;
+}
+.step{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 3px solid #dedede;
+    text-align: center;
+    line-height: 25px;
+    font-weight: 550;
+}
+.login_user_tips{
+    width: 400px;
+    height: 20px;
+    font-size: 13px;
+    color: #757575;
+}
+.tips_phone_import,.tips_phone_import1,.tips_phone_import2{
+    display: none;
+    color: #ff4c4c;
+}
+.tips_phone_login,.tips_phone_login1,.tips_phone_login2{
+    display: none;
+}
+/*下*/
+.section_main_bottom{
+    margin-top: 100px;
+    width: 100%;
+    height: 254px;
+}
+.input_button input,.input_button button{
+    width: 300px !important;
+    height: 44px !important;
+    margin: 0 auto !important;
+}
+.verification{
+    font-size: 13px;
+    color: #757575;
+}
+.verification:hover{
+    color: #ff4c4c;
+    border: 1px solid #ff4c4c !important;
+    cursor: pointer;
+}
+.next_step{
+    background: #ff4c4c;
+    color: #fff;
+    font-size: 16px;
+}
+.down_step{
+    margin-top: 30px !important;
+}
+.third_step a{
+    color: #2c7cdf;
+    margin-left: 5px;
+}
+.enterprise_user{
+    width: 300px;
+    height: 21px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 20px;
+}
+.corporate_user{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('../img/注册/newRegister.png') no-repeat -84px 0;
+}
+.success_login{
+    color: #4072af;
+    margin-left: 10px;
+}
+.Generate2{
+display: none;
+position: relative;
+bottom: 20px;
+}
+
+/*第二步*/
+.second_step{
+    display: none;
+}
+
+/*第三步*/
+.third_step_succeed{
+    color: #ff4c4c;
+    display: none;
+}
+/*下一步*/
+.next_step{
+    cursor: pointer;
+}
+
+/*footer部分*/
+
+.footer{
+    width: 1200px;
+    margin: 0 auto;
+}
+.theme{
+    width: 994px;
+    border-top: 1px solid #dcdcdc;
+}
+.theme ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #666666;
+    line-height: 10px;
+    margin-right: 20px;
+}
+.theme ul li:hover{
+    color: #e3101e;
+    cursor: pointer;
+}
+.tips{
+    text-align: center;
+    height: 20px;
+    padding: 2px 0;
+}
+.tips{
+    height: 10px;
+    text-align: start;
+    line-height: 10px;
+    color: #999999;
+}
+.tips span{
+    margin: 0 5px;
+    font-size: 13px;
+}
+.certification:hover{
+    color: #e3101e;
+}
+.government{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('../img/login/ui.png') no-repeat;
+    background-position: 0px -1710px;
+}
+.icon2{
+    display: flex;
+    align-items: center;
+}
+.report ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 14px;
+    color: #999999;
+    border-top: 1px solid #e6e6e6;
+    width: 990px;
+    padding-top: 20px;
+}
+.report ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.government1{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('../img/login/ui.png') no-repeat;
+    background-position: -3px -182px ;
+}
+.government2{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('../img/login/ui.png') no-repeat;
+    background-position: -38px -182px ;
+}.government3{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('../img/login/ui.png') no-repeat;
+    background-position: -72px -182px ;
+}.government4{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('../img/login/ui.png') no-repeat;
+    background-position: -108px -182px ;
+}.government5{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('../img/login/ui.png') no-repeat;
+    background-position: -140px -182px ;
+}.government6{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('../img/login/ui.png') no-repeat;
+    background-position: -175px -182px ;
+}.government7{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('../img/login/ui.png') no-repeat;
+    background-position: -238px -182px ;
+}
+.tips1{
+    width: 60px;
+    height: 36px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.tips2{
+    width: 110px;
+    height: 36px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
