@@ -11,8 +11,10 @@
   html,body{
       height: 100%;
   }
-  .page{
+.page{
     width: 100%;
+    min-height: 100%;
+
 }
 
 /*header部分*/
@@ -848,8 +850,8 @@
     height: 6px;
     background: url('../img/商品详情页/position_img.png') no-repeat 0 -21px;
     margin-left: 3px;
-}
 
+}
 /*弹出框*/
 .pop-box{
     width: 200px;

@@ -10,7 +10,6 @@ $('.monopoly-right').hover(function(){
 },function(){
     $('.pop-box').css('display','none')
     $('.downward').css('transform','rotate(0deg)')
-
 })
 $('.pop-box').hover(function(){
     $('.pop-box').css('display','block')
