@@ -10,11 +10,10 @@
   
   html,body{
       height: 100%;
+      width: 100%;
   }
 .page{
     width: 100%;
-    min-height: 100%;
-
 }
 
 /*header部分*/
@@ -504,7 +503,7 @@
 }
 
 .img_logo{
-    margin-right: 118px;
+    display: flex;
 }
 .img_logo img{
     margin-right: 22px;
@@ -513,12 +512,15 @@
     width: 1200px;
     height: 120px;
     margin: 0 auto;
-    line-height: 120px;
+    display: flex;
+    align-items: center;
 }
 .seek1>span{
     margin-right: 20px;
 }
 .seek1{
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -646,7 +648,7 @@
     position: relative;
     font-size: 12px;
     color: #5e5e5e;
-    top: 40px;
+    top: 20px;
 
 }
 .shopping_cart1{
@@ -707,14 +709,16 @@
     width: 100%;
     height: 165px;
     display: flex;
+    overflow: hidden;
 }
 
-.navigation1{
+.navigation_M{
     width: 100%;
     height: 30px;
     background: #005691;
+    margin: 0 auto;
 }
-.navigation2{
+.navigation_Ma{
     width: 990px;
     height: 30px;
     margin: 0 auto;
@@ -930,14 +934,171 @@
 .particulars-left{
     width: 362px;
     height: 100%;
+}
 
+/*放大镜*/
+
+.magnifying_glass{
+    width: 360px;
+    height: 360px;
+    display: flex;
+    position: relative;
 }
-.particulars-left-top{
-    width: 362px;
-    height: 362px;
+
+.particulars-left-top,.particulars-left-top-amplification{
+    width: 360px;
+    height: 360px;
     border: 1px solid #cccccc;
+    position: absolute;
 }
+.particulars-left-top img{
+    width: 360px;
+    height: 360px;
+}
+.particulars-left-top-amplification{
+    left: 370px;
+    top: 0;
+    display: none;
+    overflow: hidden;
+}
+.magnifier{
+    width: 120px;
+    height: 120px;
+    background: rgba(254, 238, 167, .4); /* 半透明效果 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    
+}
+
+
 .particulars-left-bottom{
     width: 360px;
     height: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.particulars-left-bottom ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.particulars-left-bottom ul li{
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.particulars-left-bottom ul li img{
+    width: 52px;
+    height: 52px;
+}
+
+
+.par-arrows1,.par-arrows2{
+    width: 15px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+}
+.par-arrows1{
+    margin-right: 10px;
+}
+.par-arrows2{
+    margin-left: 10px;
+    
+}
+.left-arrows{
+    display: inline-block;
+    width: 11px;
+    height: 21px;
+    background: url('../img/商品详情页/position_img.png') no-repeat 0 -834px;
+}
+
+.left-arrows1{
+    display: inline-block;
+    width: 11px;
+    height: 21px;
+    background: url('../img/商品详情页/position_img.png') no-repeat 0 -555px;
+    position: relative;
+    display: none;
+}
+.right-arrows{
+    display: inline-block;
+    width: 11px;
+    height: 21px;
+    background: url('../img/商品详情页/position_img.png') no-repeat 0 -865px;
+}
+.right-arrows1{
+    display: inline-block;
+    width: 11px;
+    height: 21px;
+    background: url('../img/商品详情页/position_img.png') no-repeat 0 -585px;
+    position: relative;
+    display: none;
+}
+.bod{
+    border: 1px solid #fff;
+
+}
+.bor{
+    border: 1px solid #f5004b;
+}
+.serial-number{
+    width: 360px;
+    height: 18px;
+    color: #7d848a;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.det-number{
+    display: inline-block;
+    width: 135px;
+    height: 18px;
+
+}
+.share{
+    display: inline-block;
+    width: 18px;
+    height: 17px;
+    background: url('../img/商品详情页/position_img.png') no-repeat 0 -2325px;
+    margin: 0 5px;
+}
+.wish{
+    display: inline-block;
+    width: 14px;
+    height: 12px;
+    background: url('../img/商品详情页/position_img.png') no-repeat 0 -2352px;
+    margin: 0 5px;
+
+}
+.collect{
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    background: url('../img/商品详情页/position_img.png') no-repeat 0 -100px;
+    margin: 0 5px;
+
+}
+.serial-number a{
+    height: 18px;
+    color: #7d848a;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+.number-right{
+    display: flex;
+}
+.serial-number a:hover{
+    color: #f5004b;
 }
