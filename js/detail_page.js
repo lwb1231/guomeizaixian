@@ -33,29 +33,48 @@ $('.par-arrows2').hover(function () {
 
 })
 
+// 放大镜
+// 当鼠标进入原图时
+var objImg = [
+    { imgUrl: '../img/商品详情页/shangpin1.jpg' },
+    { imgUrl: '../img/商品详情页/shangpin2.jpg' },
+    { imgUrl: '../img/商品详情页/shangpin3.jpg' },
+    { imgUrl: '../img/商品详情页/shangpin4.jpg' },
+    { imgUrl: '../img/商品详情页/shangpin5.jpg' },
+]
+var serImg = ''
+for (let i = 0; i < objImg.length; i++) {
+    serImg += `<li class="bod${i}"><img src="${objImg[i].imgUrl}" alt=""></li>`
+}
+$('.img-pasI').html(serImg)
+
+
 //  商品滑过更换图片
 function active() {
-    for (let i = 1; i <= 5; i++) {
-        $(".bod").hover(
-            function () {
-                $(this).addClass('bor').siblings().removeClass('bor')
-                $(".particulars-left-top").html('');
-                $(".bor").children().clone().prependTo(".particulars-left-top");
-                $(".bor").children().clone().prependTo(".particulars-left-top-amplification");
-                console.log($(".bor").children())
-            },
-            function () {
-                $(".bod").removeClass('bor')
-            }
-        )
+    insertImg = `<img src="../img/商品详情页/shangpin1.jpg" alt="" width="360">`
+    insertFImg = `<img src="../img/商品详情页/shangpin1.jpg" alt="" style="position: absolute;" width="1200">
+    `
+    $('.magnifying-lens').html(insertImg)
+    $('.particulars-left-top-amplification').html(insertFImg)
+    for (let j = 1; j <= 5; j++) {
+        $('.bod' + (j - 1)).hover(function () {
+            $(this).addClass('bor').siblings().removeClass('bor')
+            var insertImg = ''
+            var insertFImg = ''
+            insertImg = `<img src="../img/商品详情页/shangpin${j}.jpg" alt="" width="360">`
+            insertFImg = `<img src="../img/商品详情页/shangpin${j}.jpg" alt="" style="position: absolute;" width="1200">
+            `
+            $('.magnifying-lens').html(insertImg)
+            $('.particulars-left-top-amplification').html(insertFImg)
+        })
     }
-    
 }
-active()
+active();
 
-// 当鼠标进入原图时
+
 $('.particulars-left-top').mouseover(
     function (e) {
+        $('.grabble').css('display','none')
         $('.particulars-left-top-amplification').css('display', 'block');
         $('.magnifier').css('display', 'block');
     })
@@ -112,13 +131,32 @@ $('.particulars-left-top').mousemove(function (e) {
 })
 // 当鼠标离开“缩略图”窗口时，隐藏“原图”窗口和“放大镜”框
 $('.particulars-left-top').mouseout(function () {
+    $('.grabble').css('display','block')
     $('.particulars-left-top-amplification').css('display', 'none');
     $('.magnifier').css('display', 'none');
 })
 
 
+// 送至
 
+function deliver(){
+    $('.deliver-to-steward').focus(function(){
+        $('.arrowhead-bottom').css('display','none')
+        $('.arrowhead-top').css('display','block')
+    })
+    $('.deliver-to-steward').blur(function(){
+        $('.arrowhead-bottom').css('display','none')
+        $('.arrowhead-top').css('display','block')
+    })
+    console.log(111)
 
+}
+deliver()
 
+$('.phone-orders').hover(function(){
+    $('.scan-a-QR-code').css('display','block')
+},function(){
+    $('.scan-a-QR-code').css('display','none')
 
+})
 
