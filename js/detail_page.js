@@ -157,6 +157,6 @@ $('.phone-orders').hover(function(){
     $('.scan-a-QR-code').css('display','block')
 },function(){
     $('.scan-a-QR-code').css('display','none')
-
+     
 })
 
