@@ -181,10 +181,10 @@ function fInp() {
         console.log($('#inp1').val())
     })
     $('.count-wrapper-minus2').click(function () {
-        if($('#inp1').val()>0){
+        if ($('#inp1').val() > 0) {
             inp--
             console.log($('#inp1').val(inp))
-        }else{
+        } else {
             return inp
         }
     })
@@ -207,3 +207,62 @@ if (window.sidebar) {
     document.onmousedown = disableselect
     document.onclick = reEnable
 }
+
+// 看了又看轮播
+
+var lookImg = [{
+    imgUrl: {
+        '1001': '../img/商品详情页/kankan1.png',
+        '1002': '../img/商品详情页/kankan2.png',
+        '1003': '../img/商品详情页/kankan3.png',
+        '1004': '../img/商品详情页/kankan4.png',
+        '1005': '../img/商品详情页/kankan5.png',
+        '1006': '../img/商品详情页/kankan6.png',
+        '1007': '../img/商品详情页/kankan7.png',
+        '1008': '../img/商品详情页/kankan8.png',
+        '1009': '../img/商品详情页/kankan9.png'
+
+    },
+    textPro: {
+        '1001': '￥1978.00',
+        '1002': '￥1298.00',
+        '1003': '￥5899.00',
+        '1004': '￥3679.00',
+        '1005': '￥1899.00',
+        '1006': '￥7898.00',
+        '1007': '￥1498.00',
+        '1008': '￥8966.00',
+        '1009': '￥6958.00',
+
+    }
+}]
+var insertLook1 = ''
+var insertLook2 = ''
+var insertLook3 = ''
+for (var i = 0; i < lookImg.length; i++) {
+    insertLook1 += `
+    <ul>
+    <li><img src="${lookImg[i].imgUrl[1001]}" alt=""><span class="look-price">${lookImg[i].textPro[1001]}</span></li>
+    <li><img src="${lookImg[i].imgUrl[1002]}" alt=""><span class="look-price">${lookImg[i].textPro[1002]}</span></li>
+    <li><img src="${lookImg[i].imgUrl[1003]}" alt=""><span class="look-price">${lookImg[i].textPro[1003]}</span></li>
+</ul>
+    `
+    insertLook2 += `
+    <ul>
+    <li><img src="${lookImg[i].imgUrl[1004]}" alt=""><span class="look-price">${lookImg[i].textPro[1004]}</span></li>
+    <li><img src="${lookImg[i].imgUrl[1005]}" alt=""><span class="look-price">${lookImg[i].textPro[1005]}</span></li>
+    <li><img src="${lookImg[i].imgUrl[1006]}" alt=""><span class="look-price">${lookImg[i].textPro[1006]}</span></li>
+</ul>
+    `
+    insertLook3 += `
+    <ul>
+    <li><img src="${lookImg[i].imgUrl[1007]}" alt=""><span class="look-price">${lookImg[i].textPro[1007]}</span></li>
+    <li><img src="${lookImg[i].imgUrl[1008]}" alt=""><span class="look-price">${lookImg[i].textPro[1008]}</span></li>
+    <li><img src="${lookImg[i].imgUrl[1009]}" alt=""><span class="look-price">${lookImg[i].textPro[1009]}</span></li>
+</ul>
+    `
+}
+$('.look-one').html(insertLook1)
+$('.look-two').html(insertLook2)
+$('.look-three').html(insertLook3)
+

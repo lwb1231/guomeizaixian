@@ -1594,3 +1594,57 @@
     top: 38px;
     display: none;
 }
+
+/*看了又看*/
+.look{
+    width: 164px;
+    height: 584px;
+    margin-left: 10px;
+}
+.look h2{
+    font-size: 14px;
+    position: relative;
+    margin: 16px 0 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.look h2 span{
+    width: 48px;
+    height: 1px;
+    display: inline-block;
+    background: #cbcbcb;
+}
+.look>ul {
+    width: 164px;
+    height: 550px;
+}
+.look ul  li{
+    position: relative;
+    margin-top: 10px;
+}
+.look-price{
+    font: 12px arial,'Microsoft YaHei';
+    color: #5e5e5e;
+    position: absolute;
+    left: 5px ;
+    bottom: 5px;
+}
+.look-one,.look-two,.look-three{
+    background-color: #fff !important;
+}
+
+.layui-carousel-ind ul{
+    width: 100px !important;
+    height: 30px !important;
+    background: #fff !important;
+}
+
+
+.layui-carousel-ind li{
+    background: #ccc !important;
+}
+.layui-carousel-ind .layui-this{
+    background: red !important;
+
+}
