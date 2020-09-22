@@ -1225,7 +1225,7 @@
     display: block;
     font: 12px/12px arial,Microsoft YaHei;
     line-height: 20px;
-    margin-right: 15px;
+    margin-right: 5px;
 }
 .jiaGe{
     display: block;
@@ -1472,8 +1472,8 @@
     height: 11px;
     background: url('../img/商品详情页/position_img.png') no-repeat 0 -2691px;
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: -.5px;
+    bottom: -.5px;
 }
 .color-shop-wif{
     padding: 11px 10px;
@@ -1505,7 +1505,9 @@
     height: 38px;
     color: #5e5e5e;
 }
+.disabled { pointer-events: none; }
 .count-wrapper-minus1{
+    
     display: block;
     float: left;
     width: 13px;
@@ -1517,6 +1519,8 @@
     font: 12px/150% tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"\u5b8b\u4f53",sans-serif;
     color: #5e5e5e;
     background: #f8f8f8;
+    cursor: pointer;
+    
 }
 .count-wrapper-minus2{
     display: block;
@@ -1529,6 +1533,7 @@
     font: 12px/150% tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"\u5b8b\u4f53",sans-serif;
     color: #5e5e5e;
     background: #f8f8f8;
+    cursor: pointer;
 }
 
 /*加入购物车*/

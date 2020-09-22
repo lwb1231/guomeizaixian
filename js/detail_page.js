@@ -74,7 +74,7 @@ active();
 
 $('.particulars-left-top').mouseover(
     function (e) {
-        $('.grabble').css('display','none')
+        $('.grabble').css('display', 'none')
         $('.particulars-left-top-amplification').css('display', 'block');
         $('.magnifier').css('display', 'block');
     })
@@ -131,7 +131,7 @@ $('.particulars-left-top').mousemove(function (e) {
 })
 // 当鼠标离开“缩略图”窗口时，隐藏“原图”窗口和“放大镜”框
 $('.particulars-left-top').mouseout(function () {
-    $('.grabble').css('display','block')
+    $('.grabble').css('display', 'block')
     $('.particulars-left-top-amplification').css('display', 'none');
     $('.magnifier').css('display', 'none');
 })
@@ -139,24 +139,71 @@ $('.particulars-left-top').mouseout(function () {
 
 // 送至
 
-function deliver(){
-    $('.deliver-to-steward').focus(function(){
-        $('.arrowhead-bottom').css('display','none')
-        $('.arrowhead-top').css('display','block')
+function deliver() {
+    $('.deliver-to-steward').focus(function () {
+        $('.arrowhead-bottom').css('display', 'none')
+        $('.arrowhead-top').css('display', 'block')
     })
-    $('.deliver-to-steward').blur(function(){
-        $('.arrowhead-bottom').css('display','none')
-        $('.arrowhead-top').css('display','block')
+    $('.deliver-to-steward').blur(function () {
+        $('.arrowhead-bottom').css('display', 'none')
+        $('.arrowhead-top').css('display', 'block')
     })
     console.log(111)
 
 }
 deliver()
 
-$('.phone-orders').hover(function(){
-    $('.scan-a-QR-code').css('display','block')
-},function(){
-    $('.scan-a-QR-code').css('display','none')
-     
-})
+$('.phone-orders').hover(function () {
+    $('.scan-a-QR-code').css('display', 'block')
+}, function () {
+    $('.scan-a-QR-code').css('display', 'none')
 
+})
+// var inp = ''
+// var inp2= $('.inp1').val(inp)
+// $('.count-wrapper-minus1').click(function(){
+//     inp++
+//     console.log(inp2)
+// })
+
+//     if(inp2>=0){
+//         $('.count-wrapper-minus2').click(function(){
+//             inp--
+//         })
+//     }else{
+
+//     }
+function fInp() {
+    var inp = ''
+    $('.count-wrapper-minus1').click(function () {
+        inp++
+        console.log($('#inp1').val(inp))
+        console.log($('#inp1').val())
+    })
+    $('.count-wrapper-minus2').click(function () {
+        if($('#inp1').val()>0){
+            inp--
+            console.log($('#inp1').val(inp))
+        }else{
+            return inp
+        }
+    })
+
+}
+fInp()
+
+
+// 禁止复制
+function disableselect(e) {
+    return false
+}
+function reEnable() {
+    return true
+}
+file://if IE4+
+document.onselectstart = new Function("return false")
+file://if NS6
+if (window.sidebar) {
+    document.onmousedown = disableselect
+    document.onclick = reEnable
+}
