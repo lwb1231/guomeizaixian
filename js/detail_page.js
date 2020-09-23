@@ -266,3 +266,56 @@ $('.look-one').html(insertLook1)
 $('.look-two').html(insertLook2)
 $('.look-three').html(insertLook3)
 
+
+var similarImg = [{
+    similarImgUrl: {
+        '1001': '../img/商品详情页/qita1.jpg',
+        '1002': '../img/商品详情页/qita2.jpg',
+        '1003': '../img/商品详情页/qita3.jpg',
+        '1004': '../img/商品详情页/qita4.jpg',
+        '1005': '../img/商品详情页/qita5.jpg',
+        '1006': '../img/商品详情页/qita6.jpg',
+    },
+    similarText:{
+        '1001': '联想(Lenovo)MIIX 210-Z8350F 10.1英寸二合一平板笔',
+        '1002': 'APPLE苹果 2019新款iPad Air3 10.5英寸平板电脑(深空',
+        '1003': '华为平板电脑 C5 10.1英寸安卓平板 智能管控网课学',
+        '1004': '华为平板电脑MatePad 10.4英寸学习平板麒麟810八核',
+        '1005': 'APPLE苹果 2019新款iPad Air3 10.5英寸平板电脑(深空',
+        '1006': '华为MatePad Pro平板电脑二合一安卓10.8英寸全面屏',
+    },
+    similarPrice:{
+        '1001': '¥1788.00',
+        '1002': '¥4258.00',
+        '1003': '￥1718.00',
+        '1004': '¥1899.00',
+        '1005': '¥5569.00',
+        '1006': '¥3999.00',
+    }
+}]
+var insertSimilar = '';
+
+for(var i=0;i<similarImg.length;i++){
+    insertSimilar+=`
+    <li><img src="${similarImg[i].similarImgUrl[1001]}" alt=""><a href="">${similarImg[i].similarText[1001]}</a><span>${similarImg[i].similarPrice[1001]}</span></li>
+    <li><img src="${similarImg[i].similarImgUrl[1002]}" alt=""><a href="">${similarImg[i].similarText[1002]}</a><span>${similarImg[i].similarPrice[1002]}</span></li>
+    <li><img src="${similarImg[i].similarImgUrl[1003]}" alt=""><a href="">${similarImg[i].similarText[1003]}</a><span>${similarImg[i].similarPrice[1003]}</span></li>
+    <li><img src="${similarImg[i].similarImgUrl[1004]}" alt=""><a href="">${similarImg[i].similarText[1004]}</a><span>${similarImg[i].similarPrice[1004]}</span></li>
+    <li><img src="${similarImg[i].similarImgUrl[1005]}" alt=""><a href="">${similarImg[i].similarText[1005]}</a><span>${similarImg[i].similarPrice[1005]}</span></li>
+    <li><img src="${similarImg[i].similarImgUrl[1006]}" alt=""><a href="">${similarImg[i].similarText[1006]}</a><span>${similarImg[i].similarPrice[1006]}</span></li>
+
+    `
+}
+$('.qiTa').html(insertSimilar)
+
+
+
+// 售后服务
+
+
+for(let i=0;i<6;i++){
+    $('.modality'+i).click(function(){
+        $(this).addClass('pitch_on').siblings().removeClass('pitch_on')
+        $('.service_Main'+i).css('display','block').siblings().css('display','none')
+    })
+}

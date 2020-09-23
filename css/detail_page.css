@@ -1648,3 +1648,180 @@
     background: red !important;
 
 }
+
+/*其他商品*/
+.similar-clauses{
+    width: 1200px;
+    height: 320px;
+    border: 1px solid #eeeeee;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.similar{
+    background: #f6f6f6;
+    height: 36px;
+    padding-left: 10px;
+    position: relative;
+    color: #666;
+    font: 600 12px/36px 'microsoft yahei';
+    background: #f6f6f6;
+}
+.qiTa{
+    height: 272px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.qiTa li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.qiTa li a{
+    width: 155px;
+    font: 12px/1.5 arial,"\65b0\5b8b\4f53";
+    color: #666;
+    font-family: arial,'Microsoft YaHei';
+    text-align: left;
+    word-break: break-all;
+    height: 36px;
+    overflow: hidden;
+    margin: 5px auto;
+}
+.qiTa li a:hover{
+    text-decoration: underline;
+    color: red;
+   
+}
+
+.qiTa li span{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: left;
+    font-family: arial,'Microsoft YaHei';
+    margin-top: 7px;
+    color: #e3101e;
+}
+.qiTa{
+    background-color: #fff !important;
+
+}
+#test21 .layui-carousel-ind{
+    display: none !important;
+}
+
+
+/*售后*/
+
+.guarantee{
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.store{
+    width: 210px;
+    height: 100%;
+}
+.boutique{
+    width: 210px;
+    height: 224px;
+    border: 1px solid #cccccc;
+}
+.Palmer{
+    background: #f6f6f6;
+}
+.Palmer h2{
+    padding: 8px 9px;
+    background-color: #f6f6f6;
+    overflow: hidden;
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+}
+.Palmer h2 a{
+    line-height: 20px;
+    font-size: 14px;
+    color: #5e5e5e;
+    word-break: break-all;
+    margin-right: 10px;
+    cursor: pointer;
+    outline: 0;
+    font-weight: 400;
+}
+.Palmer-service{
+    display: inline-block;
+    background: url('../img/商品详情页/position_img.png') no-repeat 0 -167px;
+    font-size: 0;
+    width: 21px;
+    height: 20px;
+}
+.pingFen{
+    background: #fff !important;
+    margin-top: 15px;
+    height: auto !important;
+}
+
+.Enter-Stores{
+    padding: 3px 9px 14px;
+    margin-top: 20px;
+}
+.Enter-Stores a{
+    display: inline-block;
+    color: #5e5e5e;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    width: 90px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+.post-sales-service{
+    width: 978px;
+    height: 200px;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+.post-sales-service-column ul{
+    width: 978px;
+    height: 38px;
+    border-bottom: 1px solid #ddd;
+    background: #f6f6f6;
+    display: flex;
+    justify-content: start;
+}
+.post-sales-service-column ul li{
+    height: 31px;
+    font: 600 14px/36px 'Microsoft YaHei';
+    padding: 0 20px;
+    float: left;
+    color: #5e5e5e;
+    cursor: pointer;
+    font-weight: 400;
+}
+.post-sales-service-column ul li:hover{
+    color: #f5004b;
+}
+.service_Main0{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+}
+.service_Main1,.service_Main2,.service_Main3,.service_Main4,.service_Main5{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    display: none;
+}
+
+.pitch_on{
+    height: 40px !important;
+    border-top: 3px solid #e3101e;
+    background: #fff;
+    margin: -1px 0 0;
+}
